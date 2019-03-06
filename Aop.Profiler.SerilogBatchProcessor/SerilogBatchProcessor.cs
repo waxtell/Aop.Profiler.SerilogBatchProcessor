@@ -8,6 +8,7 @@ using Serilog;
 using Serilog.Core.Enrichers;
 using Serilog.Events;
 
+// ReSharper disable IdentifierTypo
 namespace Aop.Profiler.SerilogBatchProcessor
 {
     public class SerilogBatchProcessor : EventBatchProcessorBase
