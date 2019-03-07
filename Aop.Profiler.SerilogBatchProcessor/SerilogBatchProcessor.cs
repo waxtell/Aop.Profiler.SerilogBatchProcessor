@@ -48,7 +48,7 @@ namespace Aop.Profiler.SerilogBatchProcessor
                                                     new PropertyEnricher
                                                     (
                                                         x.Key,
-                                                        JsonConvert.DeserializeObject<dynamic>((string)x.Value, _serializerSettings),
+                                                        JsonConvert.DeserializeObject((string)x.Value, _serializerSettings),
                                                         true
                                                     );
                                             }
